@@ -55,7 +55,7 @@ function quizApp() {
                             <p class="col-1">${index + 1}</p>
                             <p class="question" style="font-size: 20px;">${quiz.question}</p>
                         </div>
-                        <select name="" id="select-item" class="w-100 py-5">
+                        <select name="" id="select-item" class="box">
                             <option value="" select-disabled>Select an answer</option>
                             ${quiz.options.map((option) => {
                                 return `<option value=${option}>${option}</option>`;
@@ -64,9 +64,9 @@ function quizApp() {
                     </div>
 
                     <div class="right col-5 shadow">
-                        <p class="selected">Selected answer:</p>
-                        <p class="correct">Correct answer:</p>
-                        <p class="status">Status:</p>
+                        <p class="selected blue">Selected answer:</p>
+                        <p class="correct green">Correct answer:</p>
+                        <p class="status yellow">Status:</p>
                     </div>
                 </div>`;
     });
